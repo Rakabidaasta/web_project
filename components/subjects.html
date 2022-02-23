@@ -53,7 +53,6 @@
         $(document).ready(function () {
             $.getJSON("config/subjects.json", function (data) {
                 data.subjects.forEach(element => {
-                    console.log(element)
                     $(".subjects_content").append(`<div class="rainbow_shadow"> <div class="blur_btn"> <button class="rainbow_btn"> ${element.name} </button>  </div> </div>`);
                 });
             }).fail(function () {
