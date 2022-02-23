@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script>
+        $(function () {
+            $("#header").load("./components/header.html");
+            $("#slider_subjects").load("./components/subjects.html");
+        });
+    </script>
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>ХОД</title>
+    <link rel="shortcut icon" type="image/jpg" href="./images/logo_fav.svg" />
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="slider">
+        <div class="slider_background ">
+            <div class="figures">
+                <div class="container intro_content">
+                    <span style="font-size: 36px;">Образовательная платформа</span>
+                    <span style="font-size: 36px; padding-top: 26px; padding-bottom: 41px;">ХОД Future Academy</span>
+                    <span>Актуальные знания для новичков и профессионалов</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="subjects">
+        <div class="container" style="display: flex;">
+            <div class="owl">
+                <div class="owl_text">
+                    <div class="owl_header">Кем вы хотите стать?</div>
+                    Пора найти себя и выбрать подходящий курс :)
+                    Удачи!
+                </div>
+                <img src="./images/owl.png" alt="">
+            </div>
+            <div id="slider_subjects"></div>
+        </div>
+    </div>
+    <div class="player_bg">
+        <div class="container ">
+            <div class="player">
+                <div class="play_btn">
+                    <img src="./images/button_play.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="info_bg">
+        <div class="container">
+            <div class="info">
+                <div class="info_header">
+                    <div class="info_header_text">
+                        Актуальные знания от признанных экспертов рынка
+                        для новичков и практикующих специалистов.
+                    </div>
+                    <div class="info_header_stat">
+                        <div class="info_header_stat_item">
+                            <span>600</span>
+                            <span>Курсов</span>
+                        </div>
+                        <div class="info_header_stat_item">
+                            <span>82</span>
+                            <span>Ведущих преподавателей</span>
+                        </div>
+                        <div class="info_header_stat_item">
+                            <span>14795</span>
+                            <span>Выпускников</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="grid_info_bg">
+        <div class="container">
+            <div class="grid_info">
+                <div class="grid_info_item grid_info_open_day">
+                    <div class="date_open_day">
+                        <span>25</span>
+                        ноября
+                    </div>
+                    <div class="text_open_day">
+                        <div class="header_open_day">
+                            День открытых дверей
+                        </div>
+                        Приглашаем всех желающих на бесплатную экскурсию в мир востребованных профессий и полезных
+                        навыков
+                    </div>
+                    <button class="transparent_btn">
+                        <span>Записаться</span>
+                        <img src="./images/arrow_btn.svg" alt="">
+                    </button>
+                </div>
+                <div class="grid_info_item grid_info_programs">
+                    <div class="img_programs">
+                        <img src="./images/programs.svg" alt="">
+                    </div>
+                    <div class="text_programs">
+                        <div class="header_programs">
+                            Программы обучения
+                        </div>
+                        В списке наших курсов вы сможете найти профессию и занятие по душе, изучить новое и получить
+                        практические знания, которые помогут получить работу мечты.
+                    </div>
+                    <div class="transparent_btn transparent_btn_center">
+                        <span>Подробнее</span>
+                        <img src="./images/arrow_btn.svg" alt="">
+                    </div>
+                </div>
+                <div class="grid_info_item grid_info_news">
+                    <div class="img_newspaper">
+                        <img src="./images/newspaper.svg" alt="">
+                    </div>
+                    <div class="text_small_grid_item">
+                        Новости Академии
+                    </div>
+                </div>
+                <div class="grid_info_item grid_info_world_it">
+                    <div class="img_world_it">
+                        <img src="./images/diagram.svg" alt="">
+                    </div>
+
+                    <div class="text_small_grid_item">
+                        Мир IT
+                    </div>
+                </div>
+                <div class="grid_info_item grid_info_try_it">
+                    <div class="img_try_it">
+                        <img src="./images/small_figures.svg" alt="">
+                    </div>
+                    <div class="text_try_it">
+                        <div class="header_try_it">
+                            Попробуй!
+                        </div>
+                        Пройдите тест и узнайте свои способности в сфере информационных технологий
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // $(".owl").attr("data-content", `Кем вы хотите стать? Пора найти себя  и выбрать подходящий курс :) 
+        // Удачи!`);
+    </script>
+</body>
+
+</html>

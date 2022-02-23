@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {background-color: red;
+margin: 0 0;}
+.header {
+    background-color: #00093C;
+}
+
+.header_content {
+    display: flex;
+    align-items: center;
+}
+
+.header_logo {
+    padding: 20px 60px 20px 0;
+}
+
+.header_logo > img {
+    width: 100px;
+}
+
+.header_links, .header_info {
+    display: flex;
+}
+
+.header_link, .choose_city, .header_phone, .header_login, .header_login > button, .choose_city > button {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.header_link > img {
+    padding-right: 6px;
+}
+
+.city_bg {
+    padding: 0px 0 5px 0;
+}
+
+.city_bg:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, #F7941D, #27AAE1);
+}
+
+
+.choose_city {
+    top: 3px;
+    height: 105px;
+    border-bottom: 10px solid;
+    /* border-image-slice: 1; */
+    border-width: 5px;
+    text-decoration: underline;
+    border-image-source: linear-gradient(to right, #F5941F, #29A9DF);
+    position: relative;
+}
+
+.choose_city > button {
+    background-color: transparent;
+    border: none;
+    padding-right: 0;
+}
+
+.choose_city *:hover {
+    cursor: pointer;
+}
+
+.city_image {
+    width: 17px;
+    padding-right: 9px;
+}
+
+.arrow_image {
+    padding-left: 10px;
+    width: 8px;
+}
+
+.header_login > button {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    padding-right: 0;
+}
+
+.header_login > button > img {
+    padding-right: 8px;
+}

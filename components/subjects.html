@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../styles/subjects.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="subjects_slider">
+        <div class="subjects_header">
+            <div class="subjects_header_bg">
+                <div class="subjects_header_item">
+                    <img src="../images/children.svg" alt="">
+                    <div class="item_text">
+                        <span>Дети</span>
+                        <span>8 - 14 лет</span>
+                    </div>
+                </div>
+            </div>
+            <div class="subjects_header_bg">
+                <div class="subjects_header_item">
+                    <img src="../images/teenagers.svg" alt="">
+                    <div class="item_text">
+                        <span>Подростки</span>
+                        <span>14 - 18 лет</span>
+                    </div>
+                </div>
+            </div>
+            <div class="subjects_header_bg">
+                <div class="subjects_header_item">
+                    <img src="../images/adults.svg" alt="">
+                    <div class="item_text">
+                        <span>Взрослые</span>
+                        <span>18 - &#8734; </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subjects_content">
+            <div class="rainbow_shadow">
+                <div class="blur_btn">
+                    <button class="rainbow_btn">
+                        Робототехника
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.getJSON("../config/subjects.json", function (data) {
+                data.subjects.forEach(element => {
+                    console.log(element)
+                    $(".subjects_content").append(`<div class="rainbow_shadow"> <div class="blur_btn"> <button class="rainbow_btn"> ${element.name} </button>  </div> </div>`);
+                });
+            }).fail(function () {
+                console.log("An error has occurred.");
+            });
+        });
+    </script>
+
+</body>
+
+</html>
