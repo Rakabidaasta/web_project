@@ -296,4 +296,49 @@ body {
     padding-bottom: 30px;
 }
 
+.carousel_bg {
+    background: url(../images/pattern_bg.png);
+    padding: 100px 0;
+}
 
+.carousel {
+    display: flex;
+    padding: 10px;
+    padding-bottom: 28px;
+    column-gap: 10px;
+    max-height: 320px;
+    overflow-x: scroll;
+}
+
+.carousel::-webkit-scrollbar {
+    /* background-color: white; */
+    height: 5px;
+    margin-left: 10%
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    /* background-clip: padding-box; */
+    background: linear-gradient(-90deg, #F7941D, #27AAE1);
+}
+
+.carousel::-webkit-scrollbar-track-piece:end {
+    margin-right: 370px; 
+}
+
+.carousel::-webkit-scrollbar-track-piece:start {
+    margin-left: 370px; 
+}
+
+.blabla {
+    height: 10px;
+    padding:100px;
+    background-color: white;
+    border-radius: 10px;
+}
+.carousel_header {
+    text-align: center;
+    padding-bottom: 44px;
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+}
