@@ -303,15 +303,16 @@ body {
 
 .carousel {
     display: flex;
+    /* flex: auto; */
     padding: 10px;
     padding-bottom: 28px;
+    grid-auto-columns: 280px;
     column-gap: 10px;
-    max-height: 320px;
+    min-height: 320px;
     overflow-x: scroll;
 }
 
 .carousel::-webkit-scrollbar {
-    /* background-color: white; */
     height: 5px;
     margin-left: 10%
 }
@@ -329,16 +330,48 @@ body {
     margin-left: 370px; 
 }
 
-.blabla {
-    height: 10px;
-    padding:100px;
-    background-color: white;
-    border-radius: 10px;
-}
 .carousel_header {
     text-align: center;
     padding-bottom: 44px;
     color: white;
     font-size: 36px;
     font-weight: 700;
+}
+
+.carousel_item {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.carousel_item_header {
+    display: flex;
+}
+
+.carousel_item_text {
+    padding-left: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+}
+
+.carousel_item_text span {
+    display: block;
+    width: 140px;
+}
+
+.carousel_item_text span:first-child {
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+
+.carousel_item_feedback {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
 }

@@ -155,31 +155,41 @@
             Отзывы наших студентов
         </div>
         <div class="carousel">
-            <div class="blabla">s</div>
-            <div class="blabla"></div>
-            <div class="blabla"></div>
-            <div class="blabla"></div>
-            <div class="blabla"></div>
-            <div class="blabla"></div>
-            <div class="blabla"></div>
-            <div class="blabla"></div>
-            <div class="blabla"></div>
-            <div class="blabla"></div>
-            <div class="blabla"></div>
-            <div class="blabla"></div>
-            <div class="blabla"></div>
-            <div class="blabla"></div>
-            <div class="blabla"></div>
-            <div class="blabla"></div>
-            <div class="blabla"></div>
-            <div class="blabla"></div>
-            <div class="blabla"></div>
-            <div class="blabla"></div>
         </div>
     </div>
 
 
     <script>
+        $(document).ready(function () {
+            $.getJSON("config/feedback.json", function (data) {
+                data.feedbacks.forEach(element => {
+                    $(".carousel").append(`
+                    <div class="carousel_item">
+                        <div class="carousel_item_header">
+                            <div class="carousel_item_image">
+                                <img src="images/${element.image_path}" alt="">
+                            </div>
+                            <div class="carousel_item_text">
+                                <span>${element.name}</span>
+                                <span>Студент курса ${element.course}</span>
+                            </div>
+
+                        </div>
+                        <div class="carousel_item_feedback">
+                            ${element.feedback_text}
+                        </div>
+                        <div class="carousel_item_rating">
+                            <img src="images/star.png" alt="">
+                            ${element.rating} / 5
+                        </div>
+                    </div>                    
+                    `);
+                });
+            }).fail(function () {
+                console.log("An error has occurred.");
+            });
+        });
+
         // $(".owl").attr("data-content", `Кем вы хотите стать? Пора найти себя  и выбрать подходящий курс :) 
         // Удачи!`);
     </script>
