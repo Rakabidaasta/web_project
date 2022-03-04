@@ -16,14 +16,14 @@
         },
         {
             "image_path" : "carousel_img_3.png",
-            "name": "Рэй Брэдбери",
+            "name": "Вильям Шекспир",
             "course": "«WEB-разработчик»",
             "feedback_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac habitasse platea dictumst. In ut dui sodales, scelerisque eros non, ultrices magna.",
             "rating": 4.87
         },
         {
             "image_path" : "carousel_img_4.png",
-            "name": "Рэй Брэдбери",
+            "name": "Чарльз Диккенс",
             "course": "«WEB-разработчик»",
             "feedback_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac habitasse platea dictumst. In ut dui sodales, scelerisque eros non, ultrices magna.",
             "rating": 4.87
@@ -37,49 +37,49 @@
         },
         {
             "image_path" : "carousel_img_6.png",
-            "name": "Рэй Брэдбери",
+            "name": "Оскар Уайльд",
             "course": "«WEB-разработчик»",
             "feedback_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac habitasse platea dictumst. In ut dui sodales, scelerisque eros non, ultrices magna.",
             "rating": 4.87
         },
         {
             "image_path" : "carousel_img_1.png",
-            "name": "Рэй Брэдбери",
+            "name": "Агата Кристи",
             "course": "«WEB-разработчик»",
             "feedback_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac habitasse platea dictumst. In ut dui sodales, scelerisque eros non, ultrices magna.",
             "rating": 4.87
         },
         {
             "image_path" : "carousel_img_2.png",
-            "name": "Рэй Брэдбери",
+            "name": "Конан Дойль",
             "course": "«WEB-разработчик»",
             "feedback_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac habitasse platea dictumst. In ut dui sodales, scelerisque eros non, ultrices magna.",
             "rating": 4.87
         },
         {
             "image_path" : "carousel_img_3.png",
-            "name": "Рэй Брэдбери",
+            "name": "Редьярд Киплинг",
             "course": "«WEB-разработчик»",
             "feedback_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac habitasse platea dictumst. In ut dui sodales, scelerisque eros non, ultrices magna.",
             "rating": 4.87
         },
         {
             "image_path" : "carousel_img_4.png",
-            "name": "Рэй Брэдбери",
+            "name": "Даниэль Дефо",
             "course": "«WEB-разработчик»",
             "feedback_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac habitasse platea dictumst. In ut dui sodales, scelerisque eros non, ultrices magna.",
             "rating": 4.87
         },
         {
             "image_path" : "carousel_img_5.png",
-            "name": "Рэй Брэдбери",
+            "name": "Джоан Роулинг",
             "course": "«WEB-разработчик»",
             "feedback_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac habitasse platea dictumst. In ut dui sodales, scelerisque eros non, ultrices magna.",
             "rating": 4.87
         },
         {
             "image_path" : "carousel_img_6.png",
-            "name": "Рэй Брэдбери",
+            "name": "Джон Толкин",
             "course": "«WEB-разработчик»",
             "feedback_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac habitasse platea dictumst. In ut dui sodales, scelerisque eros non, ultrices magna.",
             "rating": 4.87

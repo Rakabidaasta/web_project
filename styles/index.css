@@ -323,11 +323,11 @@ body {
 }
 
 .carousel::-webkit-scrollbar-track-piece:end {
-    margin-right: 370px; 
+    margin-right: 5vw; 
 }
 
 .carousel::-webkit-scrollbar-track-piece:start {
-    margin-left: 370px; 
+    margin-left: 5vw; 
 }
 
 .carousel_header {
