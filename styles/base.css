@@ -17,6 +17,28 @@
     background-size: 80% 75%;
 }
 
+.rainbow_box {
+    width: fit-content;
+    padding: 20px;
+    background: linear-gradient(to right, rgba(247, 148, 29, 0.3), rgba(39, 170, 225, 0.3)) no-repeat center;
+    background-size: 97% 80%;
+    position: relative;
+}
+
+.rainbow_box:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, #F7941D, #27AAE1) no-repeat center;
+    background-size: 97% 80%;
+}
+
+.blur_box {
+    margin-left: -20px;
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px;
+    backdrop-filter: blur(10px);    
+}
+
 .rainbow_btn {
     background-color: white;
     padding: 16px 19px;
@@ -52,7 +74,7 @@
 
 .help_info_div {
     display: flex;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
 }
 
 .help_info_item {
@@ -74,7 +96,126 @@
     line-height: 26px;
 }
 
+.ask_owl_bg {
+    background: linear-gradient(white 60%, #00093C 40%);
+}
+
+.ask_owl_div {
+    /* border: 1px solid green; */
+    border-radius: 20px;
+
+    background-color: white;
+    position: relative;
+    padding: 40px 40px 50px 200px;
+    display: flex;
+}
+
+.owl_hor_text {
+    width: 400px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.owl_hor_text > .owl_header {
+    font-size: 24px;
+    font-weight: 600;
+    /* line-height: 29px; */
+}
+
+.owl_ask > img  {
+    position: absolute;
+    width: 276px;
+    top: 24px;
+    left: -60px;
+}
+
+.ask_owl_form {
+    width: 50%;
+    align-items: center;
+    text-align: center;
+}
+
+.form_separ {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ask_owl_form input {
+    padding: 15px 20px;
+    background: #00093C1A;
+    border: none;
+    border-radius: 6px;
+    margin: 10px;
+    width: 43%;
+}
+
+.ask_owl_form input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+
+}
+
+.ask_owl_form > form > input {
+    width: 85%;
+}
+
+.form_text {
+    width: 45%;
+    margin: 10px 0 10px 10px;
+    font-size: 10px;
+    color: #4F4F4F;
+    font-weight: 400;
+    text-align: left;
+}
+
+.ask_owl_form .form_btn {
+    margin: 10px 10px 10px 10px;
+
+    width: 45%;
+    padding: 12px 50px;
+    color: white;
+    background-color: #F7941D;
+    border-radius: 6px;
+    border: none;
+}
+
+.ask_owl_form .form_btn:hover {
+    background-color: #FFAE4D;
+    cursor: pointer;
+}
 
 
+.footer_bg {
+    background: #00093C;
+    color: #BDBDBD;    
+}
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.footer_bg a {
+    text-decoration: none;
+}
+
+.footer_bg a > img {
+    margin-right: 20px;
+}
+
+.footer_header {
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.footer_info {
+    /* font-weight: 600; */
+    font-size: 14px;
+    color: #FFFFFF;
+}
 
