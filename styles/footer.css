@@ -1,0 +1,34 @@
+.footer_bg {
+    background: #00093C;
+    color: #BDBDBD;    
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.footer_column a {
+    text-decoration: none;
+}
+
+.footer_column-not-info a {
+    display: block;
+    margin: 10px 0;
+}
+
+.footer_bg a > img {
+    margin-right: 20px;
+}
+
+.footer_header {
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.footer_info {
+    /* font-weight: 600; */
+    font-size: 14px;
+    color: #FFFFFF;
+}

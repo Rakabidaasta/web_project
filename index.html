@@ -11,6 +11,7 @@
         $(function () {
             $("#header").load("components/header.html");
             $("#slider_subjects").load("components/subjects.html");
+            $("#footer").load("components/footer.html");
         });
     </script>
     <link rel="stylesheet" href="styles/index.css">
@@ -114,10 +115,10 @@
                         В списке наших курсов вы сможете найти профессию и занятие по душе, изучить новое и получить
                         практические знания, которые помогут получить работу мечты.
                     </div>
-                    <div class="transparent_btn transparent_btn_center">
+                    <a href="./programs.html" target="_blank" class="transparent_btn transparent_btn_center">
                         <span>Подробнее</span>
                         <img src="./images/arrow_btn.svg" alt="">
-                    </div>
+                    </a>
                 </div>
                 <div class="grid_info_item grid_info_news">
                     <div class="img_newspaper">
@@ -239,81 +240,7 @@
 
     <div class="footer_bg">
         <div class="container">
-            <footer>
-                <div class="footer_column">
-                    <img style="width: 100px;" src="./images/logo_white.svg" alt="">
-                    <p class="footer_info">8 800 950-33-98</p>
-                    <p class="footer_info">г. Москва, ул. Ленина, д. 50</p>
-                    <p class="footer_info">info@hodfutureacademy.ru</p>
-                    <div class="social_links">
-                        <a href="" class="social_link">
-                            <img src="./images/vk.png" alt="">
-                        </a>
-                        <a href="" class="social_link">
-                            <img src="./images/inst.png" alt="">
-                        </a>
-                        <a href="" class="social_link">
-                            <img src="./images/facebook.png" alt="">
-                        </a>
-                        <a href="" class="social_link">
-                            <img src="./images/yt.png" alt="">
-                        </a>
-                        <a href="" class="social_link">
-                            <img src="./images/telegram.png" alt="">
-                        </a>
-                    </div>
-                    <p>© ХОД, Future Academy</p>
-                </div>
-                <div class="footer_column">
-                    <p class="footer_header">Детям</p>
-                    <p>Робототехника</p>
-                    <p>Создание игр</p>
-                    <p>Программирование</p>
-                    <p>Мультимедиа</p>
-                    <p>Soft skills</p>
-                    <p>Шахматы</p>
-                    <p>Блогинг</p>
-                    <p>Создание игр</p>
-                    <p>Программирование</p>
-                    <p>Мультимедиа</p>
-                    <p>Soft skills</p>
-                </div>
-                <div class="footer_column">
-                    <p class="footer_header">Подросткам</p>
-                    <p>Web-разработка</p>
-                    <p>Прикладное программирование</p>
-                    <p>Графическое моделирование</p>
-                    <p>Game Development</p>
-                    <p>Soft skills</p>
-                    <p>Разработчик мобильных приложений</p>
-                    <p>Блогинг</p>
-                    <p>Создание игр</p>
-                    <p>Программирование</p>
-                    <p>Мультимедиа</p>
-                    <p>Soft skills</p>
-                </div>
-                <div class="footer_column">
-                    <p class="footer_header">Взрослым</p>
-                    <p>Разработчик игр на Unity</p>
-                    <p>Разработка ПО</p>
-                    <p>Графический Дизайн</p>
-                    <p>Тестировщик ПО</p>
-                    <p>Интернет Маркетинг</p>
-                    <p>Java-разработчик</p>
-                    <p>Python–разработчик</p>
-                    <p>IOS-разработчик</p>
-                    <p>Программирование</p>
-                </div>
-                <div class="footer_column">
-                    <p class="footer_header">Информация</p>
-                    <p>Об академии</p>
-                    <p>Мероприятия</p>
-                    <p>Новости</p>
-                    <p>База знаний</p>
-                    <p>Карьера</p>
-                    <p>Контакты</p>
-                </div>
-            </footer>
+            <div id="footer"></div>
         </div>
     </div>
 

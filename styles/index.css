@@ -209,7 +209,12 @@ body {
 
     width: 220px;
     justify-content: center;
+    color: black;
+    text-decoration: none;
+}
 
+.transparent_btn:hover {
+    cursor: pointer;
 }
 
 .transparent_btn > span {

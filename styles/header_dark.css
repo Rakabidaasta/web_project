@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-body {background-color: red;
-margin: 0 0;}
+body {
+    margin: 0 0;
+}
 .header {
     background-color: #00093C;
 }
