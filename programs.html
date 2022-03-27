@@ -12,25 +12,163 @@
             $("#header_dark").load("components/header_dark.html");
             $("#slider_subjects").load("components/subjects.html");
             $("#footer").load("components/footer.html");
-
         });
     </script>
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/programs.css">
     <title>ХОД</title>
     <link rel="shortcut icon" type="image/jpg" href="./images/logo_fav.svg" />
 </head>
 <body>
     <div id="header_dark"></div>
-    <div class="slider">
-        <div class="continer">
-            <div id="slider_subjects"></div>
+    <div class="container">
+        <div class="programs_header">
+            Все программы обучения
+        </div>
+        <div class="programs">
+
+            <div class="left">
+                <div class="programs_properties">
+                    <div class="programs_properties-header">
+                        Уровень сложности
+                    </div>
+
+                    <label class="programs_properties-item">Новичок
+                        <input type="radio" name="level" checked>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="programs_properties-item">Пользователь
+                        <input type="radio" name="level">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="programs_properties-item">Профессионал
+                        <input type="radio" name="level">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="programs_properties-item">Читер
+                        <input type="radio" name="level">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="programs_properties">
+                    <div class="programs_properties-header">
+                        Тип обучения
+                    </div>
+
+                    <label class="programs_properties-item">Любой
+                        <input type="radio" name="type" checked>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="programs_properties-item">Профессия
+                        <input type="radio" name="type">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="programs_properties-item">Курс
+                        <input type="radio" name="type">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="programs_properties">
+                    <div class="programs_properties-header">
+                        Длительность
+                        <span>от 1 до 24 месяцев</span>
+                    </div>
+
+                    <div class="programs_properties-range">
+                        <input type="range" id="volume" name="volume"
+                        min="0" max="11">
+                        <!-- <label for="volume">Volume</label> -->
+                    </div>
+                    
+                </div>
+        
+            </div>
+            <div class="right">
+                <div class="slider">
+                    <div id="slider_subjects"></div>
+                </div>
+                <div class="cards_grid">
+                </div>
+            </div>
+        
         </div>
     </div>
 
+    <div class="ask_owl_bg">
+        <div class="container">
+            <div class="rainbow_box">
+                <div class="blur_box">
+                    <div class="ask_owl_div">
+                        <div class="owl owl_ask">
+                            <div class="owl_text owl_hor_text">
+                                <div class="owl_header">Помочь с выбором?</div>
+                                Оставьте заявку и наши специалисты свяжутся с вами, ответят на все вопросы 
+                                и подберут подходящий вариант обучения.   
+                            </div>
+                            <img src="./images/owl.png" alt="">
+                        </div>
+                        <div class="ask_owl_form">
+                            <form action="">
+                                <input type="text" placeholder="Ваше имя">
+                                <div class="form_separ">
+                                    <input type="text" placeholder="Ваш телефон">
+                                    <input type="text" placeholder="Ваш e-mail">    
+                                </div>
+                                <div class="form_separ">
+                                    <div class="form_text">
+                                        Нажимая на кнопку, я соглашаюсь на обработку персональных данных и с правилами пользования Платформой
+                                    </div>
+                                    <button class="form_btn">
+                                        Отправить
+                                    </button>       
+                                </div>
+                            </form>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
     <div class="footer_bg">
         <div class="container">
             <div id="footer"></div>
         </div>
     </div>
+
+    <script>
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+
+        const cardsGrid = document.querySelector(".cards_grid");
+        const colors = ["#C7EEFF", "#FFCE94", "#FFE38E", "#DDDDFF", "#B8EFCF", "#C5DDFF", "#FFEEF6"]
+        for (var i = 0; i < 10; i++) {
+            var color = colors[getRandomInt(colors.length)]
+            var sale = getRandomInt(2)
+            cardsGrid.innerHTML += `
+            <a href="/chess.html" class="program_card-bg">
+                <div class="program_card-blur">
+                    <div class="program_card" style="background: ${color};">
+                        <span>Программа</span>
+                        <div class="program_header">
+                            <div class="program_icon">
+                                <img src="images/chess.svg" alt="">
+                            </div>    
+                            «Шахматная школа»
+                        </div>
+                        <div class="program_description">
+                            Шахматы - это отличная идея для времяпрепровождения с родителями, детьми и друзьями. 
+                        </div>
+                        <div class="program_extra">
+                            <div class="program_duration">24 месяца</div>
+                            ${sale ? '<div class="program_sale">-10%</div>' : ''}
+                        </div>
+                    </div>
+                </div>
+            </a>`
+        }
+    </script>
 </body>
 </html>

@@ -16,7 +16,7 @@ body {
     padding: 20px 60px 20px 0;
 }
 
-.header_logo > img {
+.header_logo > a > img {
     width: 100px;
 }
 
@@ -37,6 +37,10 @@ body {
 
 .header_link > img {
     padding-right: 6px;
+}
+
+.header_links > a {
+    text-decoration: none;
 }
 
 .city_bg {

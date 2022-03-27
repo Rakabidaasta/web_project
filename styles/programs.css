@@ -1,0 +1,191 @@
+/* body {
+    font-family: 'Montserrat', sans-serif;
+} */
+
+.programs {
+    display: flex;
+}
+
+.programs_header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    color: #000000;
+    padding: 36px 0 55px;
+}
+
+.left {
+    margin-top: 68px;
+}
+
+.programs_properties-header{
+    padding: 25px 100px 20px 0;
+    border-top: 1px solid #E0E0E0;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.programs_properties-header > span {
+    display: block;
+    padding-top: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+
+}
+
+.programs_properties-item {
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    align-items: center;
+    padding-bottom: 20px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.programs_properties-item:last-child {
+    padding-bottom: 0;
+}
+
+.programs_properties {
+    padding-top: 26px;
+}
+
+.programs_properties:first-child {
+    padding-top: 0;
+}
+
+.programs_properties-item input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    border-radius: 50%;
+    border: 2px solid #333333;
+    cursor: pointer;
+}
+
+.programs_properties-item input:checked ~ .checkmark {
+    background: linear-gradient(-90deg, #F7941D, #27AAE1) center no-repeat;
+    /* background-size: 80% 80%; */
+}
+
+.programs_properties-range input {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(-90deg, #F7941D, #27AAE1) center no-repeat;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.programs_properties-range input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    top: -10px;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #333333;
+
+    background: linear-gradient(-90deg, #F7941D, #27AAE1) center no-repeat;
+    cursor: pointer;
+}
+
+
+.cards_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.program_card-bg {
+    text-decoration: none;
+    width: fit-content;
+    padding: 20px;
+    /* padding-bottom: 0; */
+    background: linear-gradient(to right, rgba(247, 148, 29, 0.3), rgba(39, 170, 225, 0.3)) no-repeat center;
+    background-size: 90% 75%;
+    position: relative;
+}
+
+.program_card-bg:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, #F7941D, #27AAE1) no-repeat center;
+    background-size: 90% 70%;
+}
+
+.program_card-blur {
+    margin-left: -20px;
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px;
+    backdrop-filter: blur(10px);    
+}
+
+.program_card {
+    position: relative;
+    border-radius: 20px;
+    padding: 27px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #4F4F4F;
+}
+
+.program_header {
+    padding: 16px 0 12px;
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #00093C;
+}
+
+.program_icon {
+    margin-right: 20px;
+}
+
+.program_card-bg:hover .program_card {
+    transform: translate(-5px, -5px);
+}
+
+.program_description {
+    padding-bottom: 25px;
+}
+
+.program_extra {
+    display: flex;
+    justify-content: space-between;
+}
+
+.program_sale {
+    position: absolute;
+    right: -10px;
+    padding: 8px 14px;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;    
+    
+    border-radius: 20px;
+    background-color: #F11212;
+}
+
